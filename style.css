@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(143deg, rgb(208, 144, 238), rgb(255, 104, 230));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music-player{
+    width: 400px;
+    background: #ffe0e5;
+    padding: 25px 35px;
+    text-align: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #f53192;
+    box-shadow:  0 5px 10px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+#songImg{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow:  0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.music-player h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    margin: 20px auto 10px;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #333;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none; /*default wala doda ghaib ho jai ga */
+    background: #f53192;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow:  0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow:  0 5px 10px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.3);
+    background: #f53192;
+    font-size: 25px;
+    color: #fff;
+}
